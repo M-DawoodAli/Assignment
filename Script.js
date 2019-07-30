@@ -14,7 +14,7 @@ function search_Flag()
           for(i=0;i<countries.length;i++)       //traversing countries data to check with searchbar text
                {
                  options=countries[i].name;
-                 if(options.toLowerCase()===x.toLowerCase())  //compare two texts
+                 if(options.toLowerCase()===x.toLowerCase())  //make both the texts to lowercase and then comapre
                    {
                      document.querySelector("#flag img").src=countries[i].flag;  //append flag in card
                      document.getElementById("country").innerHTML=countries[i].name;
